@@ -1,0 +1,56 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+/* :root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ */
+
+ @layer base {
+  input{
+    @apply rounded-2xl;
+    border: none !important;
+    background-color: black;
+    outline: none;
+    color: #fff;
+  }
+  input:focus{
+    border: none !important;
+
+    outline: none;
+  }
+  input::placeholder,
+  textarea::placeholder {
+    color: var(--color-gray-400);
+  }
+}
+body{
+  background-color: #efedeb;
+    font-family: "Roboto", sans-serif;
+}
+
+
+
+.scroll-container {
+  scroll-snap-type: x mandatory;
+}
+.box {
+  scroll-snap-align: center;
+}
+
+.boxWrapper{
+  transition: all 0.5s ease-out;
+}
+.boxWrapper:hover{
+  transform: translateY(-10px);
+}
